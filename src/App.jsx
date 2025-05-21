@@ -36,7 +36,7 @@ function App() {
         >
           {[6, 12, 18, 24].map((v) => (
             <option key={v} value={v}>
-              Show {v}
+              Hiển thị {v}
             </option>
           ))}
         </select>
@@ -46,11 +46,11 @@ function App() {
           onChange={(e) => setSort(e.target.value)}
           className="border rounded px-3 py-2"
         >
-          <option value="">Sort by</option>
-          <option value="price_asc">Price ↑</option>
-          <option value="price_desc">Price ↓</option>
-          <option value="name_asc">Name A-Z</option>
-          <option value="name_desc">Name Z-A</option>
+          <option value="">Hủy sắp xếp</option>
+          <option value="price_asc">Cao - Thấp</option>
+          <option value="price_desc">Thấp - Cao</option>
+          <option value="name_asc">Tên A-Z</option>
+          <option value="name_desc">Tên Z-A</option>
         </select>
       </div>
 
