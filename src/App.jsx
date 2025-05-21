@@ -47,8 +47,8 @@ function App() {
           className="border rounded px-3 py-2"
         >
           <option value="">Hủy sắp xếp</option>
-          <option value="price_asc">Cao - Thấp</option>
-          <option value="price_desc">Thấp - Cao</option>
+          <option value="price_asc">Thấp - Cao</option>
+          <option value="price_desc">Cao - Thấp</option>
           <option value="name_asc">Tên A-Z</option>
           <option value="name_desc">Tên Z-A</option>
         </select>
@@ -64,7 +64,7 @@ function App() {
       <div className="flex justify-between items-center mt-8">
         <button
           onClick={() => setPage(Number(page) - 1)}
-          disabled={Number(page) <= 1} 
+          disabled={Number(page) <= 1}
           className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded disabled:opacity-50"
         >
           ◀ Prev
